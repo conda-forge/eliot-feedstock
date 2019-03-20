@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - eliot.tests
+    - eliot
 
 about:
   home: http://github.com/itamarst/eliot
