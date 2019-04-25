@@ -1,5 +1,5 @@
 {% set name = "eliot" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 68f3901211288c6c3cb2d05124069a42fa8d4635362dd4b3c6459f701cf39e7a
+  sha256: 7194bcd931c25837ee962b8e78af5983ed5947038679b7021c7964128eda1b69
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - boltons
     - pyrsistent
     - zope.interface
+    - aiocontextvars  # [py<37]
 
 test:
   imports:
