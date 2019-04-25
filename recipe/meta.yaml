@@ -24,7 +24,7 @@ requirements:
     - boltons
     - pyrsistent
     - zope.interface
-    - aiocontextvars
+    - aiocontextvars  # [py<37]
 
 test:
   imports:
