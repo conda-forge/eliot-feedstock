@@ -1,5 +1,5 @@
 {% set name = "eliot" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7194bcd931c25837ee962b8e78af5983ed5947038679b7021c7964128eda1b69
+  sha256: 9f0e32a5aa678b90660c94f1cfee61b0244a6d91ace294d5ea42fb7163af73b9
 
 build:
   number: 0
@@ -35,7 +35,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Causal logging for Python: the logging library that tells you why it happened'
+  summary: 'Action-tracing logging for Python: the logging library that tells you why it happened'
   description: |
     Most logging systems tell you what happened in your application, whereas eliot also tells you why it happened. eliot is a Python logging system that outputs causal chains of actions: actions can spawn other actions, and eventually they either succeed or fail. The resulting logs tell you the story of what your software did: what happened, and what caused it.
   doc_url: http://eliot.readthedocs.io/
