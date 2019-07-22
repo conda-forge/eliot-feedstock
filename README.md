@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Causal logging for Python: the logging library that tells you why it happened
+Summary: Action-tracing logging for Python: the logging library that tells you why it happened
 
 Most logging systems tell you what happened in your application, whereas eliot also tells you why it happened. eliot is a Python logging system that outputs causal chains of actions: actions can spawn other actions, and eventually they either succeed or fail. The resulting logs tell you the story of what your software did: what happened, and what caused it.
 
