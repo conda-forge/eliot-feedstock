@@ -1,5 +1,5 @@
 {% set name = "eliot" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5760194b308a7ab35514ae1b942d88e9f2359071556d82580383f09ca586fff7
+  sha256: c2f099a3e8d5ecfc22745766e7cc664a48db64b6b89d986dff270491d8683149
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
